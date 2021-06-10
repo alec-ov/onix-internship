@@ -4,7 +4,7 @@
 	let a = 10;
 	let b = 3;
 
-	console.log("\n  1.1:\n10 % 3 =", a % b);
+	console.log(`\n  1.1:\n${a} % ${b} =`, a % b);
 }
 
 // 1.2
@@ -66,7 +66,7 @@ function Fibonacci(n) {
 	let cur = 0;
 	let prev = 1;
 
-	let result = [];
+	const result = [];
 	for (let i = 0; i < n; i++) {
 		result.push(cur);
 		[cur, prev] = [cur + prev, cur];
