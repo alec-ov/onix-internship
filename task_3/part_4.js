@@ -18,16 +18,19 @@ function isEqual(a, b, checked = []) {
 
 	const entriesB = Object.entries(b);
 	const entriesA = Object.entries(a);
+
 	if (entriesB.length != entriesA.length) return false;
 
+	// compare all properties
 	const result = entriesA.every(
 		([key, value]) => {
+			// for non-checked objects continue recursive comparison
 			if (isObject(b[key]) && isObject(value) && !checked.includes(b[key]) && !checked.includes(value)) {
-				//                          to prevent infinite loops(for circular refs) VV
-				return Object.is(b[key], value) || isEqual( b[key], value, checked.concat([b[key], value]) ); // continue recursive check only if different references
+				// add current objects to "checked" to prevent infinite loops(for circular refs) VV
+				return isEqual( b[key], value, checked.concat([b[key], value]) ); 
 			}
 			else {
-				return Object.is(b[key], value);
+				return Object.is(b[key], value); // for non-object keys
 			}
 		}
 	);
