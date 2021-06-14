@@ -5,5 +5,5 @@ import "./task_2/index.js";
 
 import "./task_3/index.js";
 
-
+import "./task_4/index.js";
 
