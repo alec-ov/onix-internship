@@ -28,6 +28,7 @@ function getRandomInt(min, max) {
 
 console.log("\n  1.3:");
 console.log("rand[1, 100) =", getRandomInt(1, 100));
+console.log("rand[1, 100) =", getRandomInt(1, 100));
 console.log("rand[10, 20) =", getRandomInt(10, 20));
 console.log("rand[-1, 1) =", getRandomInt(-1, 1));
 
