@@ -9,7 +9,7 @@ class APromise {
 	result = undefined;
 
 	/**
-	 * 
+	 * Creates a promise that runs f()
 	 * @param {Function} f 
 	 * @param {boolean} run should this promise be started immediately
 	 */
