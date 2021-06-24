@@ -9,10 +9,10 @@ const bar = new Promise((resolve, reject) => {
 console.log("Res", foo, bar);
 /**/
 
-const foo = new Promise((resolve, reject) => {
+const foo = new Promise((resolve/*, reject /**/) => {
 	resolve("Promise1");
 });
-const bar = new Promise((resolve, reject) => {
+const bar = new Promise((resolve/*, reject /**/) => {
 	resolve("Promise2");
 });
 
