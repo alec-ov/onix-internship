@@ -1,5 +1,5 @@
 /*
-5.2 Fix this code
+1.2 Fix this code
 
 const object = {
   a: 'somestring',
@@ -32,6 +32,7 @@ Object.keys(object).forEach((item) => {
 		numbers.push(object[item]); // Array.pipe() is not a function
 	}
 });
-
+console.group("1.2:");
 console.log(numbers);
+console.groupEnd("1.2:");
 // expected output: Array [42, 11]

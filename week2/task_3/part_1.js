@@ -13,8 +13,8 @@ function incrementAll(...numbers) {
 
 
 (async ()=> {
-	console.group("1.3");
+	console.group("3.1");
 	console.log(task);
 	console.log(await incrementAll(23, 1, -101));
-	console.groupEnd("1.3");
+	console.groupEnd("3.1");
 })();
